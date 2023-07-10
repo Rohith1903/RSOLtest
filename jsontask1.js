@@ -19,9 +19,17 @@ let user1 = {
 	empid:7
 };
 
+let user2 = {
+	fname : "Tom",
+	lname:"Holland",
+	age : 28,
+	empid:8
+};
+
 //STEP 2: ADDING NEW DAT TO USER Object
 users.push(user);
-users.push(user1)
+users.push(user1);
+users.push(user2)
 
 //STEP 3: WRITING TO A file
 fs.writeFile("employee.json", JSON.stringify(users), err => {
